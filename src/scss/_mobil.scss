@@ -1,0 +1,50 @@
+.mobil {
+    padding: 4.8rem 0 5rem;
+    background: url("../images/mobil/mobile_bg.png") no-repeat;
+    background-size: cover;
+}
+.mobil__item-bg {
+    width: 100%;
+    max-width: 320px;
+    min-height: 280px;
+    padding-top: 7rem;
+    background-color: $background-color_3;
+    background-size: cover;
+    text-align: center;
+    color: $color_2;
+    text-transform: uppercase;
+    position: relative;
+}
+.mobil__item-bg--1 {
+    background: url("../images/mobil/1.jpg") no-repeat;
+}
+.mobil__item-bg--2 {
+    background: url("../images/mobil/2.jpg") no-repeat;
+}
+.mobil__item-bg--3 {
+    background: url("../images/mobil/3.jpg") no-repeat;
+}
+.mobil__item-bg--4 {
+    background: url("../images/mobil/4.jpg") no-repeat;
+}
+.mobil__item-bg--5 {
+    background: url("../images/mobil/5.jpg") no-repeat;
+}
+.mobil__item-bg--6 {
+    background: url("../images/mobil/6.jpg") no-repeat;
+}
+.mobil__item__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.plus {
+    width: 2.9rem;
+    height: 2.9rem;
+    border: none;
+    border-radius: 50%;
+    background: #000 url("../images/mobil/plus.svg") no-repeat center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3.5rem;
+}

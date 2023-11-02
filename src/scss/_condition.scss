@@ -1,0 +1,31 @@
+.condition {
+    padding: 6.5rem 0 8.7rem;
+}
+.condition__list {
+    padding-left: 5rem;
+}
+.condition__list__item {
+    margin-bottom: .5rem;
+    span {
+        font-size: 1.7rem;
+        font-weight: 300;
+        color: $color_4;
+    }
+}
+.condition__title {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.condition__text {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.condition--blue {
+    color: $color_5;
+    list-style: url("../images/check-blu.png");
+}
+.condition--red {
+    color: $color_7;
+    list-style: url("../images/check_red.png");
+}

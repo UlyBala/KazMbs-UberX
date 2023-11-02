@@ -1,0 +1,114 @@
+@media (max-width: 992px) {
+    .promo {
+        padding: 151px 0 25px 0;
+        h1 {
+            font-size: 3rem;
+        }
+        h3 {
+            margin-top: 2rem;
+            font-size: 2rem;
+            br {
+                display: block;
+            }
+        }
+    }
+    .phone__text {
+        font-size: 1rem;
+    }
+    .phone__number {
+        font-size: 1rem;
+    }
+    .phone__btn {
+        font-size: 1rem;
+    }
+    .promo__text {
+        br {
+            display: block;
+        }
+    }
+    .causes-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .info {
+        margin: 2.4rem 0 0 0;
+    }
+    .footer-site {
+        margin: 1.5rem 0;
+        order: 2;
+    }
+    .footer-nav {
+        order: 1;
+    }
+    .footer-nav__top {
+        margin: 1rem 0;
+    }
+    .footer-links {
+        order: 3;
+    }
+}
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .header-top {
+        ul {
+            display: none;
+        }
+    }
+    .logo {
+        span {
+            display: none;
+        }
+    }
+    .phone {
+        display: none;
+    }
+    .phone__number--btn {
+        display: block;
+    }
+    .promo__text {
+        p {
+            display: none;
+        }
+    }
+    .phone__number {
+        text-align: center;
+    }
+    .phone__btn {
+        padding: 0;
+    }
+    .black-bg {
+        min-height: auto;
+        .section-title {
+            display: none;
+        }
+        .section-text {
+            display: none;
+        }
+        p {
+            display: block;
+            padding-bottom: 3.1rem;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 300;
+            color: $color_2;
+        }
+    }
+    .auto {
+        margin-top: 3.4rem;
+        position: initial;
+        transform: translateX(0);
+    }
+    .img-bg {
+        display: none;
+    }
+    .footer-nav__top {
+        gap: 1rem;
+    }
+    .footer-nav__bottom {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}

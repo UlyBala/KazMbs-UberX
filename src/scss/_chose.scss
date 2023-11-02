@@ -1,0 +1,25 @@
+.black-bg {
+    min-height: 502px;
+    padding-top: 5.6rem;
+    background-color: $background-color_6;
+    position: relative;
+    p {
+        display: none;
+    }
+}
+.auto {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-bg {
+    padding: 210px 0 138px 0;
+    background: url("../images/auto-bg.png") no-repeat;
+    background-size: cover;
+    p {
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}

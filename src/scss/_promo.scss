@@ -1,0 +1,63 @@
+.promo__text {
+    br {
+        display: none;
+    }
+    text-align: center;
+    color: $color_2;
+}
+.phone__number {
+    display: block;
+    text-align: right;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $color_2;
+}
+.phone__number--btn {
+    display: none;
+}
+.phone__btn {
+    padding: 1.2rem 1rem;
+    border: none;
+    border-radius: .4rem;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    color: $color_2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.promo {
+    padding: 151px 0 153px 0;
+    background: #212121 url("../images/uber_bg.jpg") no-repeat;
+    background-size: cover;
+    h1 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 3.6rem;
+        margin-bottom: 1.6rem;
+        br {
+            display: none;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &:first-child {
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+}
+.promo__btn {
+    margin-top: 90px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -4px 0px 3px rgba(0, 0, 0, 0.12) inset;
+    color: $color_2;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
