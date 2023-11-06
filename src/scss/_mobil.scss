@@ -3,36 +3,62 @@
     background: url("../images/mobil/mobile_bg.png") no-repeat;
     background-size: cover;
 }
-.mobil__item-bg {
+
+.mobil__item {
     width: 100%;
     max-width: 320px;
     min-height: 280px;
+}
+
+.mobil__item__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+.mobil__item--bg-1 {
+    background: url("../images/mobil/1.jpg") no-repeat;
+}
+.mobil__item--bg-2 {
+    background: url("../images/mobil/2.jpg") no-repeat;
+}
+.mobil__item--bg-3 {
+    background: url("../images/mobil/3.jpg") no-repeat;
+}
+.mobil__item--bg-4 {
+    background: url("../images/mobil/4.jpg") no-repeat;
+}
+.mobil__item--bg-5 {
+    background: url("../images/mobil/5.jpg") no-repeat;
+}
+.mobil__item--bg-6 {
+    background: url("../images/mobil/6.jpg") no-repeat;
+}
+
+.mobil__item__inner .front,
+.mobil__item__inner .back {
+    width: 100%;
+    height: 100%;
     padding-top: 7rem;
     background-color: $background-color_3;
     background-size: cover;
+    backface-visibility: hidden;
     text-align: center;
     color: $color_2;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
 }
-.mobil__item-bg--1 {
-    background: url("../images/mobil/1.jpg") no-repeat;
+
+.mobil__item__inner .back {
+    transform: rotateY(180deg);
 }
-.mobil__item-bg--2 {
-    background: url("../images/mobil/2.jpg") no-repeat;
+
+.mobil__item:hover .mobil__item__inner {
+    transform: rotateY(180deg);
 }
-.mobil__item-bg--3 {
-    background: url("../images/mobil/3.jpg") no-repeat;
-}
-.mobil__item-bg--4 {
-    background: url("../images/mobil/4.jpg") no-repeat;
-}
-.mobil__item-bg--5 {
-    background: url("../images/mobil/5.jpg") no-repeat;
-}
-.mobil__item-bg--6 {
-    background: url("../images/mobil/6.jpg") no-repeat;
-}
+
 .mobil__item__title {
     font-size: 2.4rem;
     font-weight: 400;
@@ -42,9 +68,25 @@
     height: 2.9rem;
     border: none;
     border-radius: 50%;
-    background: #000 url("../images/mobil/plus.svg") no-repeat center;
+    background: #000;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 3.5rem;
+    cursor: pointer;
+}
+
+.plus__line {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 21px;
+        background: url("../images/mobil/plus.svg") center (center / cover) no-repeat;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
 }
