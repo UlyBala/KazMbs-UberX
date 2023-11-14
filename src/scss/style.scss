@@ -1,112 +1,14 @@
-$color_1: red;
-$color_2: #fff;
-$color_3: #000;
-$color_4: #222222;
-$color_5: #1EACC7;
-$color_6: #202020;
-$color_7: #FF5656;
-$color_8: #070716;
-$color_9: #999999;
-$font-family_1: 'Roboto', sans-serif;
-$background-color_1: #000;
-$background-color_2: #fff;
-$background-color_3: #212121;
-$background-color_4: rgba(0, 0, 0, .6);
-$background-color_5: #1EACC7;
-$background-color_6: #070716;
-$background-color_7: #080816;
-$background-color_8: transparent;
 
-* {
-    box-sizing: border-box;
-    &:before {
-        box-sizing: border-box;
-    }
-    &:after {
-        box-sizing: border-box;
-    }
-}
-html {
-    font-size: 10px;
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: $color_1;
-}
-a {
-    text-decoration: none;
-}
-p {
 
-}
-h1 {
-    margin: 0;
-}
-h2 {
-    margin: 0;
-}
-h3 {
-    margin: 0;
-}
-h4 {
-    margin: 0;
-}
-h5 {
-    margin: 0;
-}
-h6 {
-    margin: 0;
-
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-body {
-    font-family: $font-family_1;
-}
-
-.wrapper {
-    overflow: hidden;
-}
-.small-title {
-    padding: .3rem 1.5rem;
-    background-color: $background-color_1;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: $color_2;
-    text-transform: uppercase;
-}
-.small-title--white {
-    background-color: $background-color_2;
-    color: $color_3;
-}
-.section-title {
-    margin-top: 3.2rem;
-    font-size: 3.8rem;
-    font-weight: 700;
-    color: $color_4;
-    text-transform: uppercase;
-}
-.section-text {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: $color_4;
-}
-.text--white {
-    color: $color_2;
-}
-
-@import "_header";
-@import "_promo";
-@import "_causes";
-@import "_mobil";
-@import "_chose";
-@import "_condition";
-@import "_world";
-@import "_footer";
-@import "_media";
+@import "variables";
+@import "general";
+@import "mixins";
+@import "./componets/header";
+@import "./componets/promo";
+@import "./componets/causes";
+@import "./componets/mobil";
+@import "./componets/chose";
+@import "./componets/condition";
+@import "./componets/world";
+@import "./componets/footer";
+@import "media";
