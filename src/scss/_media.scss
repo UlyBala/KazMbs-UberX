@@ -49,14 +49,32 @@
     }
 }
 @media (max-width: 768px) {
+    .header {
+        top: -125px;
+
+        &--active {
+            top: 0;
+        }
+    }
+
+    .header__nav {
+        margin-bottom: 1rem;
+        text-align: center;
+        background-color: #212121;
+    }
+
     .burger {
         display: flex;
     }
-    .header-top {
-        ul {
-            display: none;
-        }
+
+    .header__nav__item {
+        margin-bottom: .5rem;
     }
+
+    .header__nav__line {
+        display: none;
+    }
+
     .logo {
         span {
             display: none;
