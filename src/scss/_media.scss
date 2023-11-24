@@ -50,7 +50,7 @@
 }
 @media (max-width: 768px) {
     .header {
-        top: -125px;
+        top: -135px;
 
         &--active {
             top: 0;
@@ -58,7 +58,7 @@
     }
 
     .header__nav {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         text-align: center;
         background-color: #212121;
     }
