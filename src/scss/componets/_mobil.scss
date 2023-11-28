@@ -55,7 +55,7 @@
     transform: rotateY(180deg);
 }
 
-.mobil__item:hover .mobil__item__inner {
+.mobil__item__inner--active {
     transform: rotateY(180deg);
 }
 
@@ -63,7 +63,7 @@
     font-size: 2.4rem;
     font-weight: 400;
 }
-.plus {
+.mobil__item__btn {
     width: 2.9rem;
     height: 2.9rem;
     border: none;
@@ -74,17 +74,30 @@
     transform: translateX(-50%);
     bottom: 3.5rem;
     cursor: pointer;
+
+
 }
 
-.plus__line {
-    position: relative;
-
+.plus--line {
     &:before {
         content: '';
         display: block;
         width: 21px;
         height: 21px;
         background: url("../images/mobil/plus.svg") center (center / cover) no-repeat;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+}
+
+.close--line {
+    &:before {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 21px;
+        background: url("../images/mobil/close.svg") center (center / cover) no-repeat;
         position: absolute;
         top: 3px;
         left: 4px;
